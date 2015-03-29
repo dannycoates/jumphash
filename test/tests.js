@@ -4,6 +4,16 @@ var jh = require('../')
 var crypto = require('crypto')
 
 test(
+  'negative key',
+  function (t) {
+    var k = -100
+    var b = 20
+    t.equal(jh(k, b), jh(-k, b))
+    t.end()
+  }
+)
+
+test(
   'int samesies',
   function (t) {
     for (var i = 0; i < 1000; i++) {

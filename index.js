@@ -16,7 +16,7 @@ function hash(key, numBuckets) {
 
 function jumphash(key, numBuckets, alg) {
   if (typeof key === 'number') {
-    key = (new BN(Math.round(key))).toRed(modulo64)
+    key = (new BN(Math.floor(Math.abs(key)))).toRed(modulo64)
   }
   else if (Buffer.isBuffer(key)) {
     key = (new BN(key.slice(0, Math.min(key.length, 8)))).toRed(modulo64)

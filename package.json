@@ -1,6 +1,6 @@
 {
   "name": "jumphash",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "jump consistent hash",
   "main": "index.js",
   "scripts": {
