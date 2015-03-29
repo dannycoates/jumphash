@@ -1,0 +1,31 @@
+{
+  "name": "jumphash",
+  "version": "0.1.0",
+  "description": "jump consistent hash",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dannycoates/jumphash.git"
+  },
+  "keywords": [
+    "jump",
+    "consistent",
+    "hash"
+  ],
+  "author": "Danny Coates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannycoates/jumphash/issues"
+  },
+  "homepage": "https://github.com/dannycoates/jumphash",
+  "devDependencies": {
+    "jumpsuit": "^1.1.0",
+    "tap": "^0.7.1"
+  },
+  "dependencies": {
+    "bn.js": "2.0.3"
+  }
+}
