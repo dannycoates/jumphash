@@ -1,4 +1,5 @@
 var BN = require('bn.js')
+var crypto = require('crypto')
 
 const modulo64 = BN.red(new BN('10000000000000000', 16))
 const multiplier = (new BN('2862933555777941757', 10)).toRed(modulo64)
