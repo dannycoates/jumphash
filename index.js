@@ -23,9 +23,8 @@ function jumphash(key, numBuckets, alg) {
     key = (new BN(key.slice(0, Math.min(key.length, 8)))).toRed(modulo64)
   }
   else {
-    var h = crypto.createHash(alg || 'sha1')
-    h.update(key.toString())
-    key = (new BN(h.digest().slice(0, Math.min(key.length, 8)))).toRed(modulo64)
+    var h = crypto.createHash(alg || 'sha1').update(key.toString()).digest()
+    key = (new BN(h.slice(0, Math.min(h.length, 8)))).toRed(modulo64)
   }
   return hash(key, numBuckets)
 }

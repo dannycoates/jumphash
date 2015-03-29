@@ -16,7 +16,7 @@ test(
 test(
   'string keys',
   function (t) {
-    var k = 'this is a test'
+    var k = 'XX'
     var buf = crypto.createHash('sha1').update(k).digest()
     var b = 20
     t.equal(jh(k, b), jh(buf, b))
